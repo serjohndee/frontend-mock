@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'IBM Plex';
+    src: url('/fonts/IBMPlexSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'IBM Plex';
+    src: url('/fonts/IBMPlexSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/public/fonts/IBMPlexMono-Bold.ttf') format('truetype');
+    font-variant-numeric: slashed-zero;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('/fonts/IBMPlexMono-Regular.ttf') format('truetype');
+    font-variant-numeric: slashed-zero;
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Noken';
+    src: url('/fonts/Nokenregular.ttf') format ('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Noken';
+    src: url('/fonts/Nokenbold.ttf') format ('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
