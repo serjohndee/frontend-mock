@@ -5,10 +5,10 @@ interface SalesProgressProps {
   
   const SalesProgress: React.FC<SalesProgressProps> = ({ sold, tierSupply }) => {
     // Format the 'sold' value with decimal separators
-    const formattedSold = sold.toLocaleString();
+    // const formattedSold = sold.toLocaleString();
   
     // Format the 'tierSupply' value with decimal separators
-    const formattedTierSupply = tierSupply.toLocaleString();
+    // const formattedTierSupply = tierSupply.toLocaleString();
   
     // Calculate the percentage by dividing tiersold by tiersupply
     // const percentage = (sold / tierSupply) * 100;
