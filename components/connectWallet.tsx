@@ -6,8 +6,6 @@ import type {
   } from '@web3-onboard/common'
 
   
-  
-
 interface Account {
     address: string,
     balance: Record<TokenSymbol, string> | null,
@@ -23,6 +21,7 @@ export default function ConnectWallet() {
   
 
   useEffect(() => {
+    if (!wallet) return;
     if (wallet?.provider) {
       const { name, avatar } = wallet?.accounts[0].ens ?? {}
       setAccount({
@@ -35,7 +34,9 @@ export default function ConnectWallet() {
   }, [wallet])
 
   useEffect(() => {
+    if (!wallet) return;
     // If the wallet has a provider than the wallet is connected
+    // if (connecting) {
     if (wallet?.provider) {
       const provider = new ethers.providers.Web3Provider(wallet.provider, 'any')
       setProvider(provider)
@@ -51,8 +52,8 @@ export default function ConnectWallet() {
     return (
       <div className="flex items-center">
       <div className="flex-shrink-0 flex items-center gap-3">
-      <div className="text-gray-50">Connected to {wallet.label} on {networkName} network</div>
-            {account.ens?.avatar ? (<img src={account.ens?.avatar} alt="ENS Avatar" />) : null}
+      {/* <div className="text-gray-50">Connected to {wallet.label} on {networkName} network</div> */}
+            {/* {account.ens?.avatar ? (<img src={account.ens?.avatar} alt="ENS Avatar" />) : null} */}
           {/* <div>{ account.ens?.name ? account.ens.name : String(account.address).slice(0,10).concat("...") }</div> */}
           {/* <div>Connected to {wallet.label}</div> */}
           <button type="button"
