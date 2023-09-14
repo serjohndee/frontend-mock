@@ -24,7 +24,9 @@ const Launchcard: React.FC<LaunchcardProps> = ({
   saleOpen,
 }) => {
   // Format the 'participants' value with decimal separators
-  const formattedParticipants = participants.toLocaleString();
+  // const formattedParticipants = participants.toLocaleString();
+  const formattedParticipants = "redacted";
+
 
    // Calculate the discounted price
   //  const tierDiscount = ((60 - tierPriceUsd) / 60 * 100).toFixed(0);
